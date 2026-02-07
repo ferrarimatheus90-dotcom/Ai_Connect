@@ -639,7 +639,8 @@ img {
     border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-.form-group input {
+.form-group input,
+.form-group textarea {
     width: 100%;
     padding: 14px 20px;
     border-radius: var(--radius-sm);
@@ -649,13 +650,17 @@ img {
     background: rgba(255, 255, 255, 0.9);
     color: var(--text-dark);
     transition: 0.2s;
+    font-family: 'Inter', sans-serif;
+    resize: vertical;
 }
 
-.form-group input::placeholder {
+.form-group input::placeholder,
+.form-group textarea::placeholder {
     color: #94a3b8;
 }
 
-.form-group input:focus {
+.form-group input:focus,
+.form-group textarea:focus {
     background: var(--white);
     border-color: var(--primary-light);
     box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.2);
