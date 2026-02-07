@@ -220,6 +220,37 @@
         </div>
     </footer>
     <script src="antigravity-bg.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
+    <script type="module">
+        import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/index.js';
+        createChat({
+            webhookUrl: 'https://agente-n8n.qy9sqv.easypanel.host/webhook/4whtiHPRCKfYZvgi/chat',
+            target: '#n8n-chat',
+            mode: 'window',
+            chatInputKey: 'chatInput',
+            chatSessionKey: 'sessionId',
+            metadata: {},
+            showWelcomeScreen: false,
+            defaultOpen: false,
+            initialMessages: [
+                'Olá! 👋 Sou a IA da AI Connect. Como posso ajudar você hoje?'
+            ],
+            i18n: {
+                en: {
+                    title: 'AI Connect Assistant',
+                    subtitle: 'Especialista em IA',
+                    footer: '',
+                    getStarted: 'Iniciar conversa',
+                    inputPlaceholder: 'Digite sua mensagem...',
+                },
+            },
+            style: {
+                accentColor: '#6c5ce7',
+                background: '#13131f',
+                color: '#ffffff',
+            },
+        });
+    </script>
 </body>
 
 </html>
